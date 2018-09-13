@@ -28,7 +28,7 @@ http://lk.newprolab.com/amazon/
 Ваши машины начали инициализацию:
 ![img101](images/img101.png)
 
-Подождите немного, потом нажмите кнопку “Обновить”, чтобы получить актуальную информацию о статусе запуска машин. Коннектиться можно, как только написано running. Они выделяются на один час и после этого времени автоматически убиваются. Если часа недостаточно, вы можете продлить время ещё на час.
+Вы можете увидеть 3 или 4 машины в статусе pending. Подождите немного, потом нажмите кнопку “Обновить”, чтобы получить актуальную информацию о статусе запуска машин. Коннектиться можно, как только написано running. Они выделяются на один час и после этого времени автоматически убиваются. Если часа недостаточно, вы можете продлить время ещё на час.
 
 ![img102](images/img102.png)
 
@@ -124,7 +124,7 @@ IdentityFile {здесь_полный_путь_до_директории_/.ssh}/
 
 Добавляем репозиторий Ambari в директорию на установочной машине:
 
-`wget -nv http://public-repo-1.hortonworks.com/ambari/ubuntu14/2.x/updates/2.4.2.0/ambari.list -O /etc/apt/sources.list.d/ambari.list`
+`wget -O /etc/apt/sources.list.d/ambari.list http://public-repo-1.hortonworks.com/ambari/ubuntu16/2.x/updates/2.7.0.0/ambari.list`
 
 `apt-key adv --recv-keys --keyserver keyserver.ubuntu.com B9733A7A07513CAD`
 
@@ -143,22 +143,22 @@ IdentityFile {здесь_полный_путь_до_директории_/.ssh}/
 Правильный вывод любой из команд выше выглядит так:
 
 ```bash
-root@ip-172-31-31-21
-:/home/ubuntu# apt-cache showpkg ambari-server
 Package: ambari-server
 Versions: 
-2.4.2.0-136 (/var/lib/apt/lists/public-repo-1.hortonworks.com_ambari_ubuntu14_2.x_updates_2.4.2.0_dists_Ambari_main_binary-amd64_Packages)
+2.7.0.0-897 (/var/lib/apt/lists/public-repo-1.hortonworks.com_ambari_ubuntu16_2.x_updates_2.7.0.0_dists_Ambari_main_binary-amd64_Packages)
  Description Language: 
-                 File: /var/lib/apt/lists/public-repo-1.hortonworks.com_ambari_ubuntu14_2.x_updates_2.4.2.0_dists_Ambari_main_binary-amd64_Packages
+                 File: /var/lib/apt/lists/public-repo-1.hortonworks.com_ambari_ubuntu16_2.x_updates_2.7.0.0_dists_Ambari_main_binary-amd64_Packages
                   MD5: c6d904389bc0d41429b0c7c52796924c
 
 
 Reverse Depends: 
 Dependencies: 
-2.4.2.0-136 - openssl (0 (null)) postgresql (2 8.1) python (2 2.6) curl (0 (null)) 
+2.7.0.0-897 - openssl (0 (null)) postgresql (2 8.1) python (2 2.6) curl (0 (null)) 
 Provides: 
-2.4.2.0-136 - 
-Reverse Provides:
+2.7.0.0-897 - 
+Reverse Provides: 
+
+
 ```
 
 Теперь мы готовы установить Ambari:
@@ -167,22 +167,15 @@ Reverse Provides:
 
 Пакет весьма увесистый:
 
-`After this operation, 744 MB of additional disk space will be used.`
+`After this operation, 468 MB of additional disk space will be used.`
 
-Через несколько минут установка Ambari будет завершена, и вы увидите следующий вывод:
+Через несколько минут установка Ambari будет завершена, и вы увидите следующий вывод в самом конце:
 
 ```
-Setting up ambari-server (2.4.2.0-136) ...
-update-rc.d: warning: default stop runlevel arguments (0 1 6) do not match ambari-server Default-Stop values (0 6)
- Adding system startup for /etc/init.d/ambari-server ...
-   /etc/rc0.d/K20ambari-server -> ../init.d/ambari-server
-   /etc/rc1.d/K20ambari-server -> ../init.d/ambari-server
-   /etc/rc6.d/K20ambari-server -> ../init.d/ambari-server
-   /etc/rc2.d/S20ambari-server -> ../init.d/ambari-server
-   /etc/rc3.d/S20ambari-server -> ../init.d/ambari-server
-   /etc/rc4.d/S20ambari-server -> ../init.d/ambari-server
-   /etc/rc5.d/S20ambari-server -> ../init.d/ambari-server
-Processing triggers for libc-bin (2.19-0ubuntu6.9) ...
+Setting up ambari-server (2.7.0.0-897) ...
+Processing triggers for libc-bin (2.23-0ubuntu10) ...
+Processing triggers for systemd (229-4ubuntu21.4) ...
+Processing triggers for ureadahead (0.100.0-19) ...
 ```
 
 Сервер Ambari установлен, теперь перейдём к его настройке.
@@ -251,13 +244,13 @@ Connection to ec2-34-250-13-236.eu-west-1.compute.amazonaws.com closed.
 
 Нас интересует кнопка Launch Install Wizard:
 
-![img0](images/img0.png)
+![launch_install_wizard](images/launch_install_wizard.png)
 
 Называем наш кластер `newprolab`.
 
-**Select Version**: удалите все репозитории кроме ubuntu14.
+**Select Version**: удалите все репозитории кроме ubuntu16.
 
-![img1](images/img1.png)
+![use_ubuntu16_repo.png](images/use_ubuntu16_repo.png)
 
 
 **Install Options**
@@ -270,14 +263,14 @@ SSH User Account: ubuntu
 
 SSH Port Number: 22
 
-![img2](images/img2.png)
+![install_options](images/install_options.png)
 
 
 **Confirm Hosts**
 
 На этом экране проверяется наличие и доступ к указанным вами хостам. Если вы всё сделали правильно, проблем быть не должно, и вы через некоторое время увидите следующий статус (варнинги нам не помешают, продолжаем с ними):
 
-![img3](images/img3.png)
+![confirm_hosts](images/confirm_hosts.png)
 
 ⚠️ Если же вы видите ошибки, вы наверняка:
 
@@ -297,7 +290,7 @@ SSH Port Number: 22
 
 Все остальные сервисы нам не нужны, выключите их. Разумеется, если вам хочется поэкспериментировать, мы вас не останавливаем :) Можете, например, поставить Ambari Infra и Ambari Metrics, чтобы получить более функциональный мониторинг кластера.
 
-Игнорируем Limited Functionality Warning. Нажимаем Proceed Anyway. Дважды!
+Утверждаем добавление зависимости - Ambari Metrics. Игнорируем Limited Functionality Warning. Нажимаем Proceed Anyway. Дважды!
 
 
 **Assign Masters**
@@ -309,9 +302,19 @@ SSH Port Number: 22
 
 Убедитесь, что все машины имеют роли DataNode и NodeManager. Остальные настройки можно оставить по умолчанию.
 
-![img32](images/img32.png) 
+![assign_masters](images/assign_masters.png) 
 
-**Customize Services**
+**Credentials**
+
+Запоните поля с паролем. В принуципе, это для лабораторной работы не понадобится. Но най всякий случай, запишите. newprolab как пароль подойдет.
+
+![credential](image/credentials.png)
+
+**Directories, accounts**
+
+Оставляем как есть.
+
+**All configurations**
 
 Можно либо ничего не трогать, либо добавить немного Java heap size для NameNode и DataNode, например, до 2GB.
 
@@ -320,22 +323,28 @@ SSH Port Number: 22
 
 Всё должно быть в порядке, так что нажимайте Deploy.
 
+![review](image/review.png)
+
 Начинается конфигурирование машин на кластере:
 
-![img4](images/img4.png) 
+![install_start_test](images/install_start_test.png) 
 
 ⚠️ Если вы где-то сильно не ошиблись, процедура должна пройти без ошибок. Главная проблема, которая может теоретически возникнуть — закрытые порты. Когда статус хоста меняется на Fail, открывайте Message для этого хоста и смотрите, что написано в логе. Если это действительно похоже на закрытый порт (обычно это некий отказ в доступе: connection refused), то вам стоит обратиться к куратору. Другая причина — закончилось время жизни инстанса, а вы его не продлили.
 
 После успешного окончания деплоя Message для всех хостов сменяется на Success:
 
-![img5](images/img5.png) 
+![finish_install_succ](images/img5.png) 
+
+Однако может заверщиться и с редупреждениями
+
+![finish_install](images/finish_install_warn.png) 
 
 После этого нажимаем Next, смотрим Summary и завершаем процедуру установки кластера. Если вам стабильно не везёт, то в Summary вы увидите ошибки или варнинги, подробнее о которых будет сказано дальше.
 
 ### Веб-интерфейс управления кластером Ambari
 Ambari на рабочем и установленном кластере выглядит так:
 
-![img6](images/img6.png) 
+![dashboard_metrics](images/dashboard_metrics.png) 
 
 Если возникают проблемы, вы это сразу же видите по красному цвету:
 
@@ -347,7 +356,7 @@ Ambari на рабочем и установленном кластере выг
 
 Смотрим на алерты, переходим во вкладку Summary. Вполне возможно, что сервис просто нужно включить:
 
-![img9](images/img9.png) 
+![service_actions](images/service_actions.png) 
 
 В любом случае, смотрите алерты и, если самостоятельно решить проблему не удаётся, обращайтесь за помощью к куратору или коллегам. У нас достаточно тривиальный и протестированный конфиг, поэтому проблема, скорее всего, тоже несложная.
 
@@ -369,7 +378,7 @@ Ambari на рабочем и установленном кластере выг
 
 Загружаем данные с сервера NPL: 
 
-`wget http://data.newprolab.com/public-newprolab-com/numbers.txt.lzma -O /tmp/numbers.txt.lzma`
+`wget http://data.cluster-lab.com/public-newprolab-com/numbers.txt.lzma -O /tmp/numbers.txt.lzma`
 
 Распаковываем:
 
@@ -387,50 +396,63 @@ Ambari на рабочем и установленном кластере выг
 
 `hdfs dfs -ls /hdp/apps`
 
-Почти наверняка это `2.5.3.0-37`, поэтому вы можете скопировать следующие команды:
+Почти наверняка это `3.0.0.0-1634`, поэтому вы можете скопировать следующие команды:
 
 ```
-hdfs dfs -rm /hdp/apps/2.5.3.0-37/mapreduce/mapreduce.tar.gz
-hdfs dfs -put /usr/hdp/2.5.3.0-37/hadoop/mapreduce.tar.gz /hdp/apps/2.5.3.0-37/mapreduce/mapreduce.tar.gz
+hdfs dfs -rm /hdp/apps/3.0.0.0-1634/mapreduce/mapreduce.tar.gz
+hdfs dfs -put /usr/hdp/3.0.0.0-1634/hadoop/mapreduce.tar.gz /hdp/apps/3.0.0.0-1634/mapreduce/mapreduce.tar.gz
 ```
 
 Если версия отличается, то работать нужно с соответствующей директорией.
 
 Теперь можете запускать MapReduce Job:
 
-`hadoop jar /usr/hdp/2.5.3.0-37/hadoop-mapreduce/hadoop-streaming.jar -D mapred.reduce.tasks=1 -input /users/numbers -output /users/numbers/result -mapper "cat" -reducer "uniq -c"`
+`hadoop jar /usr/hdp/3.0.0.0-1634/hadoop-mapreduce/hadoop-streaming.jar -D mapred.reduce.tasks=1 -input /users/numbers -output /users/numbers/result -mapper "cat" -reducer "uniq -c"`
 
 Мы здесь используем простые cli-утилиты `cat` и `uniq`, считаем число уникальных строк — ничего сложного.
 
 Обратите внимание на нижнюю строчку верхней части вывода:
 
 ```
-hdfs@ip-172-31-31-216:/home/ubuntu$ hadoop jar /usr/hdp/2.5.3.0-37/hadoop-mapreduce/hadoop-streaming.jar -D mapred.reduce.tasks=1 -input /users/numbers -output /users/numbers/result -mapper "cat" -reducer "uniq -c"
-packageJobJar: [] [/usr/hdp/2.5.3.0-37/hadoop-mapreduce/hadoop-streaming-2.7.3.2.5.3.0-37.jar] /tmp/streamjob2587638631410685436.jar tmpDir=null
-17/03/02 12:10:42 INFO impl.TimelineClientImpl: Timeline service address: http://ip-172-31-25-87.eu-west-1.compute.internal:8188/ws/v1/timeline/
-17/03/02 12:10:42 INFO client.RMProxy: Connecting to ResourceManager at ip-172-31-25-87.eu-west-1.compute.internal/172.31.25.87:8050
-17/03/02 12:10:42 INFO client.AHSProxy: Connecting to Application History server at ip-172-31-25-87.eu-west-1.compute.internal/172.31.25.87:10200
-17/03/02 12:10:42 INFO impl.TimelineClientImpl: Timeline service address: http://ip-172-31-25-87.eu-west-1.compute.internal:8188/ws/v1/timeline/
-17/03/02 12:10:42 INFO client.RMProxy: Connecting to ResourceManager at ip-172-31-25-87.eu-west-1.compute.internal/172.31.25.87:8050
-17/03/02 12:10:42 INFO client.AHSProxy: Connecting to Application History server at ip-172-31-25-87.eu-west-1.compute.internal/172.31.25.87:10200
-17/03/02 12:10:43 INFO mapred.FileInputFormat: Total input paths to process : 1
-17/03/02 12:10:43 INFO mapreduce.JobSubmitter: number of splits:2
-17/03/02 12:10:43 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1488455605010_0003
-17/03/02 12:10:44 INFO impl.YarnClientImpl: Submitted application application_1488455605010_0003
-17/03/02 12:10:44 INFO mapreduce.Job: The url to track the job: http://ip-172-31-25-87.eu-west-1.compute.internal:8088/proxy/application_1488455605010_0003/
+hdfs@ip-172-31-43-40:/home/ubuntu$ hadoop jar /usr/hdp/3.0.0.0-1634/hadoop-mapreduce/hadoop-streaming.jar -D mapred.reduce.tasks=1 -input /users/numbers -output /users/numbers/result -mapper "cat" -reducer "uniq -c"
+packageJobJar: [] [/usr/hdp/3.0.0.0-1634/hadoop-mapreduce/hadoop-streaming-3.1.0.3.0.0.0-1634.jar] /tmp/streamjob1207629531506590959.jar tmpDir=null
+18/09/13 13:45:49 INFO client.RMProxy: Connecting to ResourceManager at ip-172-31-40-96.eu-west-1.compute.internal/172.31.40.96:8050
+18/09/13 13:45:49 INFO client.AHSProxy: Connecting to Application History server at ip-172-31-43-30.eu-west-1.compute.internal/172.31.43.30:10200
+18/09/13 13:45:49 INFO client.RMProxy: Connecting to ResourceManager at ip-172-31-40-96.eu-west-1.compute.internal/172.31.40.96:8050
+18/09/13 13:45:49 INFO client.AHSProxy: Connecting to Application History server at ip-172-31-43-30.eu-west-1.compute.internal/172.31.43.30:10200
+18/09/13 13:45:49 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /user/hdfs/.staging/job_1536845329445_0001
+18/09/13 13:45:50 INFO mapred.FileInputFormat: Total input files to process : 1
+18/09/13 13:45:50 INFO mapreduce.JobSubmitter: number of splits:2
+18/09/13 13:45:50 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1536845329445_0001
+18/09/13 13:45:50 INFO mapreduce.JobSubmitter: Executing with tokens: []
+18/09/13 13:45:50 INFO conf.Configuration: found resource resource-types.xml at file:/etc/hadoop/3.0.0.0-1634/0/resource-types.xml
+18/09/13 13:45:51 INFO impl.YarnClientImpl: Submitted application application_1536845329445_0001
+18/09/13 13:45:51 INFO mapreduce.Job: The url to track the job: http://ip-172-31-40-96.eu-west-1.compute.internal:8088/proxy/application_1536845329445_0001/
+
 ```
 
 По этому адресу вы можете посмотреть статус джобы и увидеть логи с ошибками. Одно неудобство — здесь указывается Internal DNS ноды, а подключиться вы можете только к Public DNS. 
 
-После завершения джобы увидите следующее:
+Далее вы видите прогресс:
+```
+18/09/13 13:45:51 INFO mapreduce.Job: Running job: job_1536845329445_0001
+18/09/13 13:46:05 INFO mapreduce.Job: Job job_1536845329445_0001 running in uber mode : false
+18/09/13 13:46:05 INFO mapreduce.Job:  map 0% reduce 0%
+18/09/13 13:46:13 INFO mapreduce.Job:  map 50% reduce 0%
+18/09/13 13:46:19 INFO mapreduce.Job:  map 100% reduce 0%
+18/09/13 13:46:22 INFO mapreduce.Job:  map 100% reduce 100%
 
 ```
-17/03/02 12:11:25 INFO mapreduce.Job: Job job_1488455605010_0003 completed successfully
-17/03/02 12:11:25 INFO mapreduce.Job: Counters: 49
+
+После завершения джобы увидите итог:
+
+```
+18/09/13 13:46:23 INFO mapreduce.Job: Job job_1536845329445_0001 completed successfully
+18/09/13 13:46:23 INFO mapreduce.Job: Counters: 53
 ...
 [[длинный кусок статистики]]
 ...
-17/03/02 12:11:25 INFO streaming.StreamJob: Output directory: /users/numbers/result
+18/09/13 13:46:23 INFO streaming.StreamJob: Output directory: /users/numbers/result
 ```
 
 Смотрим результат: `hdfs dfs -cat /users/numbers/result/* | sort | tail`
@@ -455,3 +477,5 @@ packageJobJar: [] [/usr/hdp/2.5.3.0-37/hadoop-mapreduce/hadoop-streaming-2.7.3.2
 
 Проверьте правильность выполнения задания на 
 http://lk.newprolab.com/amazon/ . После нажатия кнопки "Проверить", не обновляйте вручную страницу: придётся немного подождать.
+
+![congrats](congrats.png)
