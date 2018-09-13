@@ -308,7 +308,7 @@ SSH Port Number: 22
 
 Запоните поля с паролем. В принуципе, это для лабораторной работы не понадобится. Но най всякий случай, запишите. newprolab как пароль подойдет.
 
-![credential](image/credentials.png)
+![credential](images/credentials.png)
 
 **Directories, accounts**
 
@@ -323,7 +323,7 @@ SSH Port Number: 22
 
 Всё должно быть в порядке, так что нажимайте Deploy.
 
-![review](image/review.png)
+![review](images/review.png)
 
 Начинается конфигурирование машин на кластере:
 
@@ -348,15 +348,15 @@ Ambari на рабочем и установленном кластере выг
 
 Если возникают проблемы, вы это сразу же видите по красному цвету:
 
-![dashboard_warnings](images/idashboard_warnings.png) 
+![dashboard_warnings](images/dashboard_warnings.png) 
 
 Для нашего кластера наличие нескольких проблем допустимо, но всё равно их лучше  разобрать — для этого нужно пойти непосредственно в мониторинг хоста, в который проще всего попасть из статус-панели верхнего меню:
 
-![dashboard alerts](images/idashboard_alerts.png) 
+![dashboard alerts](images/dashboard_alerts.png) 
 
 Или для каждого сервиса отдельно (здесть - для HDFS):
 
-![dashboard alerts](images/idashboard_alerts_for_hdfs.png) 
+![dashboard alerts](images/dashboard_alerts_for_hdfs.png) 
 
 Смотрим на алерты, в данном случае не запущен сервис data node на одном хосте. Переходим в DATANODES, выбираем хост и используем зеленую Actions чтобы запустить сервис:
 
@@ -482,4 +482,8 @@ packageJobJar: [] [/usr/hdp/3.0.0.0-1634/hadoop-mapreduce/hadoop-streaming-3.1.0
 Проверьте правильность выполнения задания на 
 http://lk.newprolab.com/amazon/ . После нажатия кнопки "Проверить", не обновляйте вручную страницу: придётся немного подождать.
 
-![congrats](congrats.png)
+<p align="center">
+  <img src="images/congrats.png" alt="congrats" />
+</p>
+
+
