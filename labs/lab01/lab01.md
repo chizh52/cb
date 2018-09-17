@@ -1,10 +1,10 @@
 ## Лаба 1. Разворачивание кластера из 4 машин в облаке с помощью Ambari от Hortonworks
 
-##### [![New Professions Lab — Big Data 8](http://data.newprolab.com/public-newprolab-com/npl7.svg)](https://github.com/newprolab/content_bigdata8)
+##### [![New Professions Lab — Big Data 9](http://data.newprolab.com/public-newprolab-com/npl7.svg)](https://github.com/newprolab/content_bigdata9)
 
 ### Дедлайн
 
-⏰ 1 апреля 2018 года, 23:59 по Москве
+⏰ 28.09.2018, 23:59 по Москве
 
 ### Задача
 

@@ -1,10 +1,10 @@
 ## ✨Лаба 1. Суперачивка. Собрать групповую статистику из лог-файла с помощью MapReduce
 
-##### [![New Professions Lab — Big Data 7](http://data.newprolab.com/public-newprolab-com/npl7.svg)](https://github.com/newprolab/content_bigdata8)
+##### [![New Professions Lab — Big Data 9](http://data.newprolab.com/public-newprolab-com/npl7.svg)](https://github.com/newprolab/content_bigdata9)
 
 ### Дедлайн
 
-⏰ 1 апреля 2017 года, 23:59 по Москве
+⏰ 28.09.2018, 23:59 по Москве
 
 ### Задача
 
@@ -15,8 +15,11 @@
 План работы:
 1. Развернуть работающий Hadoop-кластер с помощью Ambari, как вы только что делали.
 
-2. По файлу `advert.log` — http://data.newprolab.com/public-newprolab-com/advert.log.lzma —  `(ip, userid, country, bannerid, payout)` размером 2ГБ получить ответ `(country, totalpayout)`, в котором для каждой страны должна стоять сумма `payout` по этой стране. Ответ должен располагаться в директории HDFS `/users/adverts`.
+2. По файлу `advert.log` — http://data.cluster-lab.com/public-newprolab-com/advert.log.lzma —  `(ip, userid, country, bannerid, payout)` размером 2ГБ получить ответ `(country, totalpayout)`, в котором для каждой страны должна стоять сумма `payout` по этой стране. Ответ должен располагаться в директории HDFS `/users/adverts`.
 
 3. Вы сможете проверить правильность выполнения лабораторной работы с помощью автоматического скрипта автопроверки прямо в вашем личном кабинете.
 
 Никаких подсказок — это суперачивка!
+
+Вы можете отладить ваш скрипт локально, без хадупа, а потом запустить на вашем кластере сразу после завешения основной лабораторки lab01, чтобы не устанавливать кластер 2 (или более) раз.
+
