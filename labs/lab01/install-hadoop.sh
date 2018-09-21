@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # should be run as printf "Y\nn\n1\ny\nn" | ./install-hadoop.sh
-wget -nv wget http://public-repo-1.hortonworks.com/ambari/ubuntu16/2.x/updates/2.7.0.0/ambari.list -O /etc/apt/sources.list.d/ambari.list
+wget -nv http://public-repo-1.hortonworks.com/ambari/ubuntu16/2.x/updates/2.7.0.0/ambari.list -O /etc/apt/sources.list.d/ambari.list
 apt-key adv --recv-keys --keyserver keyserver.ubuntu.com B9733A7A07513CAD
 apt-get update
 apt-get -y install ambari-server
