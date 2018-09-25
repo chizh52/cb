@@ -16,7 +16,7 @@
 
 :warning: Справочная информация:
 
-[**Важные сайты**](important_sites.md), [**Как зайти на мастер**](extra/login_to_master.md), [**инструкция по настройке прокси**](extra/proxy.md)
+:heavy_exclamation_mark:[**Важные сайты**](important_sites.md), :arrow_right:[**Как зайти на мастер**](extra/login_to_master.md), :link:[**Настройка прокси**](extra/proxy.md), :snake: [**Питон на кластере**](extra/python_instructions.md)
 
 | :calendar: :video_camera: |:postbox:|:blue_book:|:computer:|:books:|:cake:|
 | --------:| -------:| ------:| -------:|------:|----:|
