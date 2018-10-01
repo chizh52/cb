@@ -9,7 +9,6 @@
 | Hadoop | http://master.cluster-lab.com:8088/cluster | мониторинг хадупа :warning: через прокси! |
 | jupyter-hub | master.cluster-lab.com:80 | для запуска тетрадок с кодом |
 | proxy | data.cluster-lab.com:2225 | `ssh data.cluster-lab.com -p 2225 -l proxy -D localhost:1080 -N`|
-| class marker | classmarker.com | для тестов |
-| HBase | -  |`hbase_endpoint = 'master.cluster-lab.com'| 
+| HBase | - |`hbase_endpoint = 'master.cluster-lab.com'`| 
 | Hive  | node1.cluster-lab.com:10000 |`beeline -u jdbc:hive2://node1.cluster-lab.com:10000 -n name.surname` |
 
