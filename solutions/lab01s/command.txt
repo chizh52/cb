@@ -1,0 +1,2 @@
+hadoop jar ~/hadoop-streaming.jar -input /user/artem.trunov/adverts/advert.log -output /user/artem.trunov/adverts/result -file m.py -mapper "m.py" -file r.py -reducer "r.py"
+
