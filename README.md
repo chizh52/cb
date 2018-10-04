@@ -27,5 +27,6 @@
 |**2018-09-27**  [Map-Reduce]() |[Николай Марков]() | [Приемы и стратегии работы с Map-Reduce](materials/2018-09-27-Приёмы_и_стратегии_работы_с_MR-Nikolay.pdf) || | [статья от Гугл](https://static.googleusercontent.com/media/research.google.com/en//archive/mapreduce-osdi04.pdf),[Hadoop Streaming manual](http://hadoop.apache.org/docs/r2.8.3/hadoop-streaming/HadoopStreaming.html), [MR Tutorial](http://hadoop.apache.org/docs/r2.8.3/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html), [MR Tutorial Yahoo](https://developer.yahoo.com/hadoop/tutorial/module4.html), [UI для мониторинга Hadoop-джобов на кластере](http://master.cluster-lab.com:8088/cluster) - :warning: - через [прокси](extra/proxy.md), [примеры от Николая](extra/mapreduce_practice) |
 |**2018-09-29**  [HDFS]() |[Антон Пилипенко]() | [HDFS](materials/2018-09-29-HDFS_Anton_Pilipenko.pdf) || |  |
 |**2018-10-02**  [HBase]() |[Антон Пилипенко]() | [HBase](materials/2018-10-02-Основы_HBASE_Антон_Пилипенко.pdf) | [lab02](labs/lab02) | | |
+|**2018-10-04**  [Python II]() |[Николай Марков]() | [Python II](materials/2018-10-04-Питон_matplotlib_ml_Николай_Марков.pdf) || | [тетрадки и дата](extra/python2_code_data) |
 
 
