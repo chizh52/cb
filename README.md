@@ -29,7 +29,7 @@
 |**2018-10-02**  [HBase]() |[Антон Пилипенко]() | [HBase](materials/2018-10-02-Основы_HBASE_Антон_Пилипенко.pdf) | [lab02](labs/lab02), [решение](solutions/lab02), [решение-с](solutoins/lab02s) | | |
 |**2018-10-04**  [Python II]() |[Николай Марков]() | [Python II](materials/2018-10-04-Питон_matplotlib_ml_Николай_Марков.pdf) || | [тетрадки и дата](extra/python2_code_data) |
 |**2018-10-06**  [Hive]() |[Антон Пилипенко]() | [Hive лекция](materials/2018-10-06-Hive_Pig_Hue_Антон_Пилипенко.pdf) [Hive семинар](materials/2018-10-06_Семинар_Hive_Антон_Пилипенко.pdf) |[lab03](labs/lab03)| | [Hive SQL cheat-sheet](https://hortonworks.com/blog/hive-cheat-sheet-for-sql-users/) [Продвинутый Hive](https://habrahabr.ru/company/dca/blog/305838/)|
-|**2018-10-09**  [Введение в text mining]() |[Петр Ермаков]() | [Введение в text mining](materials/2018-10-09-Введение_в_Text-mining_Петр_Ермаков.pdf) || [tf-idf.ipynb](extra/tf-idf.ipynb) [zipf.ipynb](extra/zipf.ipynb) |  |
-2018-10-11| [Введение в ML]() |[Петр Ермаков]() | [Введение в ML](materials/2018-10-11-Intro_to_ML_Петр_Ермаков.pdf) | | |[упражнения](2017-10-07_Text-mining_exercises.pdf) | 
+|**2018-10-09**  [Введение в text mining]() |[Петр Ермаков]() | [Введение в text mining](materials/2018-10-09-Введение_в_Text-mining_Петр_Ермаков.pdf) | | [tf-idf.ipynb](extra/tf-idf.ipynb) [zipf.ipynb](extra/zipf.ipynb) | [упражнения](2017-10-07_Text-mining_exercises.pdf) |
+|**2018-10-11** [Введение в ML]() |[Петр Ермаков]() | [Введение в ML](materials/2018-10-11-Intro_to_ML_Петр_Ермаков.pdf) | | | | 
 
 
