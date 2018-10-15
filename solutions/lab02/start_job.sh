@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 
-DIR_IN=/labs/facetz_2015_02_13/
+DIR_IN=/labs/lab02data/facetz_2015_02_13/
 DIR_OUT=/user/$USER/facetz
 
 hadoop fs -rm -r -f $DIR_OUT
