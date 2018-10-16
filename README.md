@@ -28,10 +28,10 @@
 |**2018-09-29**  [HDFS]() |[Антон Пилипенко]() | [HDFS](materials/2018-09-29-HDFS_Anton_Pilipenko.pdf) || |  |
 |**2018-10-02**  [HBase]() |[Антон Пилипенко]() | [HBase](materials/2018-10-02-Основы_HBASE_Антон_Пилипенко.pdf) | [lab02](labs/lab02), [решение](solutions/lab02), [решение-с](solutoins/lab02s) | | |
 |**2018-10-04**  [Python II]() |[Николай Марков]() | [Python II](materials/2018-10-04-Питон_matplotlib_ml_Николай_Марков.pdf) || | [тетрадки и дата](extra/python2_code_data) |
-|**2018-10-06**  [Hive]() |[Антон Пилипенко]() | [Hive лекция](materials/2018-10-06-Hive_Pig_Hue_Антон_Пилипенко.pdf) [Hive семинар](materials/2018-10-06_Семинар_Hive_Антон_Пилипенко.pdf) |[lab03](labs/lab03)| | [Hive SQL cheat-sheet](https://hortonworks.com/blog/hive-cheat-sheet-for-sql-users/) [Продвинутый Hive](https://habrahabr.ru/company/dca/blog/305838/)|
+|**2018-10-06**  [Hive]() |[Антон Пилипенко]() | [Hive лекция](materials/2018-10-06-Hive_Pig_Hue_Антон_Пилипенко.pdf) [Hive семинар](materials/2018-10-06_Семинар_Hive_Антон_Пилипенко.pdf) |[lab03](labs/lab03), [решение](solutions/lab03), [решение-s](/solutions/lab03s)| | [Hive SQL cheat-sheet](https://hortonworks.com/blog/hive-cheat-sheet-for-sql-users/) [Продвинутый Hive](https://habrahabr.ru/company/dca/blog/305838/)|
 |**2018-10-09**  [Введение в text mining]() |[Петр Ермаков]() | [Введение в text mining](materials/2018-10-09-Введение_в_Text-mining_Петр_Ермаков.pdf) | | [tf-idf.ipynb](extra/tf-idf.ipynb) [zipf.ipynb](extra/zipf.ipynb) | [упражнения](extra/2018-10-09_Text-mining_exercises.pdf) |
 |**2018-10-11**  [Парсинг и похожесть текстов]() |[Петр Ермаков]() | | |[2018-10-11_Download_vacancies.ipynb](extra/2018-10-11_Download_vacancies.ipynb), [2018-10-11_Text_mining.ipynb](extra/2018-10-11_Text_mining.ipynb) | [data.pickle](extra/data.pickle) |
 |**2018-10-13**  [DMP]() |[Илья Маркин]() |[DMP](materials/2018-10-13_DMP-Markin-Challenges.pdf) || |  |
-|**2018-10-16** [Введение в ML]() |[Петр Ермаков]() | [Введение в ML](materials/2018-10-11-Intro_to_ML_Петр_Ермаков.pdf) | | | | 
+|**2018-10-16** [Введение в ML]() |[Петр Ермаков]() | [Введение в ML](materials/2018-10-11-Intro_to_ML_Петр_Ермаков.pdf) | [lab04](labs/lab04) | | |
 
 
