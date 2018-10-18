@@ -32,6 +32,6 @@
 |**2018-10-09**  [Введение в text mining]() |[Петр Ермаков]() | [Введение в text mining](materials/2018-10-09-Введение_в_Text-mining_Петр_Ермаков.pdf) | | [tf-idf.ipynb](extra/tf-idf.ipynb) [zipf.ipynb](extra/zipf.ipynb) | [упражнения](extra/2018-10-09_Text-mining_exercises.pdf) |
 |**2018-10-11**  [Парсинг и похожесть текстов]() |[Петр Ермаков]() | | |[2018-10-11_Download_vacancies.ipynb](extra/2018-10-11_Download_vacancies.ipynb), [2018-10-11_Text_mining.ipynb](extra/2018-10-11_Text_mining.ipynb) | [data.pickle](extra/data.pickle) |
 |**2018-10-13**  [DMP]() |[Илья Маркин]() |[DMP](materials/2018-10-13_DMP-Markin-Challenges.pdf) || |  |
-|**2018-10-16** [Введение в ML]() |[Петр Ермаков]() | [Введение в ML](materials/2018-10-11-Intro_to_ML_Петр_Ермаков.pdf) | [lab04](labs/lab04) | | |
+|**2018-10-16** [Введение в ML]() |[Петр Ермаков]() | [Введение в ML](materials/2018-10-16-Intro_to_ML_Петр_Ермаков.pdf) | [lab04](labs/lab04) | | |
 
 
