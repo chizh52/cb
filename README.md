@@ -34,5 +34,6 @@
 |**2018-10-13**  [DMP]() |[Илья Маркин]() |[DMP](materials/2018-10-13_DMP-Markin-Challenges.pdf) || |  |
 |**2018-10-16** [Введение в ML]() |[Петр Ермаков]() | [Введение в ML](materials/2018-10-16-Intro_to_ML_Петр_Ермаков.pdf) | [lab04](labs/lab04) | | |
 |**2018-10-18**  [Семинар ML]() |[Петр Ермаков]() | || [titanic.ipynb](extra/titanic.ipynb) | [Kaggle Titanic](https://www.kaggle.com/c/titanic) |
-|**2018-10-20**  [Семинар ML]() |[Петр Ермаков]() | || | [npl_for_students](https://github.com/ermakovpetr/npl_for_students/) (ml_on_text_bow.ipynb + json data files), [ML workflow](extra/machine_learning_workflow.pdf) |
+|**2018-10-20**  [Семинар ML]() |[Петр Ермаков]() | || | [npl_for_students](https://github.com/ermakovpetr/npl_for_students/) (ml_on_text_bow.ipynb + json data files), [ML workflow](extra/machine_learning_workflow.pdf), [кпражнения 1](extra/2018-10-20-excecises_ML1.pdf), [упражнения 2](extra/2018-10-20-excecises_ML2.pdf) |
+
 
