@@ -18,6 +18,8 @@
 
 :heavy_exclamation_mark:[**Важные сайты**](important_sites.md), :arrow_right:[**Как зайти на мастер**](extra/login_to_master.md), :link:[**Настройка прокси**](extra/proxy.md), :snake: [**Питон на кластере**](extra/python_instructions.md)
 
+:heavy_exclamation_mark:[Оформление проектов](extra/review-ds.md), [Стиль питона](extra/review-python.md), [Git pull-request HOWTO](students/README.md)
+
 | :calendar: :video_camera: |:postbox:|:blue_book:|:computer:|:books:|:cake:|
 | :-----------| -------:| ------:| -------:|------:|----:|
 |Дата/Тема/Видео|Спикер|Презентации|Лабы|Ноутбуки|Доп.|
