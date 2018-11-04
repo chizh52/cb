@@ -39,4 +39,6 @@
 |**2018-10-20**  [Семинар ML]() |[Петр Ермаков]() | || | [npl_for_students](https://github.com/ermakovpetr/npl_for_students/) (ml_on_text_bow.ipynb + json data files), [ML workflow](extra/machine_learning_workflow.pdf), [кпражнения 1](extra/2018-10-20-excecises_ML1.pdf), [упражнения 2](extra/2018-10-20-excecises_ML2.pdf) |
 |**2018-10-23**  [ML + text mining]() |[Петр Ермаков]() | |  [lab05](labs/lab05), [решение](solutions/lab05), [решение-с](solutions/lab05s) |  |  |
 |**2018-10-27**  [Topic modelling]() |[Петр Ермаков]() | || [notebooks, data)](https://github.com/ermakovpetr/npl_for_students/) | [упражнения](extra/2018-10-24_Topic_Modeling_exercises.pdf) |
+|**2018-10-30**  [Ансимбли и Стэкинг]() |[Кирилл Данилюк]() |[Ансамбли и Стэкинг](materials/2018-10_30_ensemble_learning_kirill_danilyuk) || |  |
 |**2018-11-01**  [Intro to Spark]() |[Павел Клеменков]() | | [lab06](labs/lab06) | [spark01](extra/spark01) |  |
+|**2018-11-03**  [Intro to RS]() |[Андрей Зимовнов]() | [Intro_to_RS](materials/2018-11-03_Intro_to_RS_Andrey_Zimovnov.pdf), [Nonpers. RS](materials/2019-11-03_Nonpers_Rec_Andrey_Zimovnov.pdf) | | |  |
