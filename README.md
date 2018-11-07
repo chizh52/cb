@@ -42,4 +42,5 @@
 |**2018-10-30**  [Ансимбли и Стэкинг]() |[Кирилл Данилюк]() |[Ансамбли и Стэкинг](materials/2018-10_30_ensemble_learning_kirill_danilyuk.pdf) || |  |
 |**2018-11-01**  [Intro to Spark]() |[Павел Клеменков]() | | [lab06](labs/lab06) | [spark01](extra/spark01) |  |
 |**2018-11-03**  [Intro to RS]() |[Андрей Зимовнов]() | [Intro_to_RS](materials/2018-11-03_Intro_to_RS_Andrey_Zimovnov.pdf), [Nonpers. RS](materials/2019-11-03_Nonpers_Rec_Andrey_Zimovnov.pdf) | [project02](project02) | |  |
-|**2018-11-06**  [Content Based RS. Collaborative filtering]() |[Андрей Зимовнов]() | [](), []() | [lab07](labs/lab07) | |  |
+|**2018-11-06**  [Content Based RS. Collaborative filtering]() |[Андрей Зимовнов]() | [Collaborative](materials/2018-11-06_Коллаборативная_фильтрация_Андрей_Зимовнов.pdf), [Content-based](materials/2018-11-06_Контентные_рекомендации_Андрей_Зимовнов.pdf) | [lab07](labs/lab07) | |  |
+
