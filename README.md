@@ -44,5 +44,5 @@
 |**2018-11-03**  [Intro to RS]() |[Андрей Зимовнов]() | [Intro_to_RS](materials/2018-11-03_Intro_to_RS_Andrey_Zimovnov.pdf), [Nonpers. RS](materials/2019-11-03_Nonpers_Rec_Andrey_Zimovnov.pdf) | [project02](project02) | |  |
 |**2018-11-06**  [Content Based RS. Collaborative filtering]() |[Андрей Зимовнов]() | [Collaborative](materials/2018-11-06_Коллаборативная_фильтрация_Андрей_Зимовнов.pdf), [Content-based](materials/2018-11-06_Контентные_рекомендации_Андрей_Зимовнов.pdf) | [lab07](labs/lab07) | |  |
 |**2018-11-08**  [Spark Dataframe]() |[Павел Клеменков]() | | | [spark02](extra/spark02) |  |
-
+|**2018-11-10**  [CLI tools and Data Science]() |[Николай Марков]() |[CLI tools](materials/2018-11-10-CLI-tools-Data-science-Николай_Марков.pdf) || | [76-0.txt](/extra/76-0.txt) [imdb.xlsx](extra/imdb-250-1996-2011-lists-only.xlsx) |
 
