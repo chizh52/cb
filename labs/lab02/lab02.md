@@ -1,7 +1,5 @@
 ## Лаба 2. Загрузить данные в HBase из большого лог-файла, лежащего в HDFS с помощью MapReduce
 
-##### [![New Professions Lab — Big Data 9](http://data.cluster-lab.com/public-newprolab-com/npl7.svg)](https://github.com/newprolab/content_bigdata9)
-
 ### Дедлайн
 
 ⏰ Понедельник, 8 октября 2018 года, 23:59.
