@@ -1,10 +1,10 @@
 ## ✨ Лаба 8. Суперачивка. Рекомендательная система фильмов MovieLens — 2
 
-##### [![New Professions Lab — Big Data 8](http://data.newprolab.com/public-newprolab-com/npl7.svg)](https://github.com/newprolab/content_bigdata8)
+##### [![New Professions Lab — Big Data 9](/extra/images/npl7.svg)](https://github.com/newprolab/content_bigdata9)
 
 ### Дедлайн
 
-⏰ Понедельник, 28 мая 2018 года, 23:59.
+⏰ Понедельник, 19 ноября 2018 года, 23:59.
 
 ### Задача
 
@@ -22,29 +22,29 @@
 
 2. Базовый предиктор для каждого пользователя (суммирование по фильмам, оцененным данным пользователем). Здесь I<sub>a</sub> — множество фильмов, по которым у пользователя есть рейтинги, а |I<sub>a</sub>| — их количество.
 
-<img width="200px" src="http://data.newprolab.com/public-newprolab-com/laba08s_base_u.png">
+<img width="200px" src="images/laba08s_base_u.png">
 
 3. Базовый предиктор для каждого фильма (суммирование по пользователям, поставившим оценку данному фильму). Здесь U<sub>i</sub> — множество пользователей, которые оценили данный фильм, а |U<sub>i</sub>| — их количество.
 
-<img width="250px" src="http://data.newprolab.com/public-newprolab-com/laba08s_base_i.png">
+<img width="250px" src="images/laba08s_base_i.png">
 
 4. Базовый предиктор для каждого пользователя и каждого фильма:
 
-<img width="140px" src="http://data.newprolab.com/public-newprolab-com/laba08s_base_ui.png">
+<img width="140px" src="images/laba08s_base_ui.png">
 
 **Часть 4. Item-item CF:**
 
 1. Вычесть из всех рейтингов r<sub>ui</sub> базовый предиктор b<sub>ui</sub> из пункта 4, часть 3 (для всей таблицы рейтингов). Если рейтинга нет, то можно поставить 0.
 2. Найдите попарные меры близости (косинус) для всех фильмов, используя очищенные оценки из пункта 1, часть 4. Суммирование идет по всем пользователям.
 
-<img width="350px" src="http://data.newprolab.com/public-newprolab-com/laba08s_cosine_items.png">
+<img width="350px" src="images/laba08s_cosine_items.png">
 
 3. Для каждого фильма, по которому у данного пользователя не стоит рейтинг, найдите:
 
    * [a] 30 ближайших фильмов-соседей для этого фильма (среди всех фильмов, а не фильмов, оценённых пользователем).
 
    * [b] прогноз оценки пользователя по формуле (базовый предиктор из пункта 4, часть 3).  Здесь *S(i)*- множество фильмов-соседей для фильма *i*, по которым у данного пользователя есть оценка.
-     <img width="300px" src="http://data.newprolab.com/public-newprolab-com/laba08s_item_item_cf.png">
+<img width="300px" src="images/laba08s_item_item_cf.png">
 
      Заметим, что суммирование идет только по тем фильмам-соседям, которые оценил пользователь.
 
