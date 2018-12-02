@@ -52,7 +52,7 @@
 |**2018-11-22**  [Spark Clusterization, ALS]() |[Павел Клеменков]() | | | [spark04](extra/spark04) |  |
 |**2018-11-24**  [A/B testing]() | [Олег Хомюк]() | [АB](materials/2018-11-24_AB_testing_Олег_Хомюк.pdf.pdf)  || | :warning: dataset на мастере: /data/share/AB_testing |
 |**2018-11-27**  [Оценка качества]() | [Андрей Зимовнов]() | [Оценка качества](materials/2018-11-27_Метрики_качества_RS.pdf), [Нейросети в РС](materials/2018-11-27_Нейросети_в_РС.pdf)|| | | 
-|**2018-11-29**  [Spark Streaming]() |[Павел Клеменков]() | | | [spark05](extra/spark05), dataset в hdfs: /share/spark05/amazon_train.parquet |  |
-|**2018-12-01**  [Making a story of your data]() | [Флександр Филатов]() | [materials/2018-12-01_Storytelling.pdf]()  || |  |
+|**2018-11-29**  [Spark Streaming]() |[Павел Клеменков]() | | | [spark05](extra/spark05) | :warning: dataset в hdfs: /share/spark05/amazon_train.parquet   |
+|**2018-12-01**  [Making a story of your data]() | [Флександр Филатов]() | [Story telling](materials/2018-12-01_Storytelling.pdf])  || |  |
 |**2018-12-04**  [Spark Graphs]() |[Наталья Притыковская]() | | | [spark06](extra/spark06) | :warning: dataset в HDFS: /share/LinkPrediction, на мастере: /data/share/LinkPrediction |
 
