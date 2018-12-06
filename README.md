@@ -47,7 +47,7 @@
 |**2018-11-10**  [CLI tools and Data Science]() |[Николай Марков]() |[CLI tools](materials/2018-11-10-CLI-tools-Data-science-Николай_Марков.pdf) || | [76-0.txt](/extra/76-0.txt), [imdb.xlsx](extra/imdb-250-1996-2011-lists-only.xlsx) |
 |**2018-11-13**  [SVD, BMF]() |[Андрей Зимовнов]() | [Мaтричные факторизации](materials/2018-11-13_Митричные_факторизации.pdf) | [lab08](labs/lab08), [решение](solutions/lab08) | | [упр1](extra/2017-11-21_Упражнения_по_частым_множествам_БЕЗ_ответов_Дима_Игнатов.pptx), [упр2](extra/2017-11-21_Упражнения_по_частым_множествам_БЕЗ_ответов_Дима_Игнатов.pptx), [упр3](extra/2017-11-22_Упражнения_по_рек.сис._Дима_Игнатов.pdf) |
 |**2018-11-15**  [Spark Classification]() |[Павел Клеменков]() | | | [spark03](extra/spark03) | :warning: dataset в HDFS: /share/toxic_comments |
-|**2018-11-17**  [Data Science Process]() | [Олег Хомюк](), [Александр Ульянов]() | [Жизненный цикл DS](materials/2018-11-17_Жизненный_цикл_DS_проектов_Олег_Хомюк.pdf),  || |  |
+|**2018-11-17**  [Data Science Process]() | [Олег Хомюк](), [Александр Ульянов]() | [Жизненный цикл DS](materials/2018-11-17_Жизненный_цикл_DS_проектов_Олег_Хомюк.pdf), [DS cases](materials/2018-11-17_Alexandr_Ulyanov_DS_cases.pdf) || |  |
 |**2018-11-20**  [Выбор метрики и оценка фин. эффекта]() | [Александр Ульянов]() | [](),  |[lab09](labs/lab09), [решение](solutions/lab09)| |  |
 |**2018-11-22**  [Spark Clusterization, ALS]() |[Павел Клеменков]() | | | [spark04](extra/spark04) |  |
 |**2018-11-24**  [A/B testing]() | [Олег Хомюк]() | [АB](materials/2018-11-24_AB_testing_Олег_Хомюк.pdf.pdf)  || | :warning: dataset на мастере: /data/share/AB_testing |
@@ -55,4 +55,4 @@
 |**2018-11-29**  [Spark Streaming]() |[Павел Клеменков]() | | | [spark05](extra/spark05) | :warning: dataset в hdfs: /share/spark05/amazon_train.parquet   |
 |**2018-12-01**  [Making a story of your data]() | [Флександр Филатов]() | [Story telling](materials/2018-12-01_Storytelling.pdf])  || |  |
 |**2018-12-04**  [Spark Graphs]() |[Наталья Притыковская]() | | | [spark06](extra/spark06) | :warning: dataset в HDFS: /share/LinkPrediction, на мастере: /data/share/LinkPrediction |
-
+|**2018-11-17**  [Spark Config, Нейросети в РС]() | [Артем Пичугин](), [Артем Просветов]() | [Конфигурация Спарк](materials/2018-12-06_Artem_Pichugin_Spark_conf.pdf), [Нейросети в РС](materials/) || |  |
