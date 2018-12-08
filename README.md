@@ -56,5 +56,5 @@
 |**2018-12-01**  [Making a story of your data]() | [Флександр Филатов]() | [Story telling](materials/2018-12-01_Storytelling.pdf])  || |  |
 |**2018-12-04**  [Spark Graphs]() |[Наталья Притыковская]() | | | [spark06](extra/spark06) | :warning: dataset в HDFS: /share/LinkPrediction, на мастере: /data/share/LinkPrediction |
 |**2018-12_06**  [Spark Config, Нейросети в РС]() | [Артем Пичугин](), [Артем Просветов]() | [Конфигурация Спарк](materials/2018-12-06_Artem_Pichugin_Spark_conf.pdf), [Нейросети в РС](materials/) || |  |
-|**2018-12-08**  [Intro to DL]() |[Григорий Сапунов]() | [Введение в Deep Learning](materials/) | |  |  |
+|**2018-12-08**  [Intro to DL]() |[Григорий Сапунов]() | [Введение в Deep Learning](materials/2018-12-08_Intro_to_Deep_learning.pdf) | |  |  |
 |**2018-12-11**  [Выпускной]() |[Артем Пичугин]() | [](materials/) | |  |  |
